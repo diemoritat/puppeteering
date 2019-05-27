@@ -25,5 +25,7 @@ Run these on your command line:
   > [`react`, `gatsby`, `angular`, `react-native`, `svelte`, `vue`, `rails`, `flutter`, `express`, `angularjs`, `electron`, `nativescript`]
 
   The script will generate a `courses` folder containing a `framework-name` subfolder with lots of .txt files with the links for all the lessons.
+  
+- `cd` into the `courses/framework-name` folder.
 
-- `find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]' -o '%(id)s-%(title)s.%(ext)s' -a *.txt" \;` **from our `courses` folder** to navigate on our subfolders and download all the videos, keeping them into their respective course folder, and with the following name structure: `id`-`lesson-title`.`file-extension`.
+- `find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]' -o '%(id)s-%(title)s.%(ext)s' -a *.txt" \;` **within our `courses/framework-name` folder** to navigate on our subfolders and download all the videos, keeping them into their respective course folder, and with the following name structure: `id`-`lesson-title`.`file-extension`.
