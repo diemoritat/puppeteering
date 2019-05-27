@@ -21,8 +21,17 @@ Run these on your command line:
 
 - `npm i` to download all the dependencies (actually, only puppeteer for now). It might take a while because it downloads Chromium too.
 
-- `node index.js react` to run our script with Node. `react` can be any of these framework names: 
-  > [`react`, `gatsby`, `angular`, `react-native`, `svelte`, `vue`, `rails`, `flutter`, `express`, `angularjs`, `electron`, `nativescript`]
+- `node index.js category topic` to run our script with Node. The `category` is the type of the course you want to download and the `topic` is... the topic. :) This is the list of possible categories and topics (the array name is the category, and the items are the topics inside that category):
+
+```js
+{
+  "frameworks": ["React", "Gatsby", "Angular", "React Native", "svelte", "Vue.js", "Ruby on Rails", "Flutter", "Express", "AngularJS", "NativeScript", "Electron", "Cycle.js", "hapi.js", "Ember.js", "ASP.NET", "Jekyll"]
+  "libraries":  ["GreenSock", "PostgreSQL", "RxJS", "Redux", "redux-observable", "Ramda", "Ionic", "Node.js", "Apollo", "Jest", "Next.js", "MobX", "Flow", "React Router", "jq", "@ngrx/store", "Nuxt.js", "Puppeteer", "Recompose", "Tailwind", "WebGL", "D3", "Angular Material", "Loopback", "Immutable.js", "Natural", "Mocha", "Polymer", "Lodash", "Protractor", "twit", "Sequelize", "Jasmine", "X-ray", "Mongoose", "Leaflet", "ReactFire", "Nightmare", "PM2", "Most.js", "TweenMax", "jQuery", "Riot.js", "glamorous", "RefluxJS", "Radium", "Chai", "RequireJS", "p5.js", "AngularFire", "TweenLite", "NW.js", "Aphrodite", "Canvas", "glMatrix", "flux", "xstream", "Realm", "axios", "Tachyons", "Neo4j"]
+  "tools": ["GraphQL", "git", "Figma", "AWS", "Chrome DevTools", "React Storybook", "ESLint", "Cypress", "Docker", "Flexbox", "webpack", "npm", "JWT", "Vim", "HTTP", "grep", "SVG", "tmux", "OpenAPI", "NGINX", "now", "Flux", "ARIA", "Gulp", "Scikit-Learn", "WebStorm", "Yarn", "Babel", "Netlify", "Grunt", "Karma", "Angular CLI", "Browserify", "Edge", "Bower", "jspm", "Screen Reader", "NVDA"]
+  "languages": ["JavaScript", "CSS", "Bash", "TypeScript", "Dart", "HTML 5", "SCSS", "python", "Elm", "Reason", "Rust", "PureScript", "Ruby", "Elixir", "ClojureScript", "Clojure"]
+  "platforms": ["mac", "Algolia", "Node.js", "Chrome", "iOS", "GitHub", "Android", "egghead", "elasticsearch", "mongodb", "firebase", "linux", "Microsoft", "Firefox", "Particle", "safari"]
+}
+```
 
   The script will generate a `courses` folder containing a `framework-name` subfolder with lots of .txt files with the links for all the lessons.
   
