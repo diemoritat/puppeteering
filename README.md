@@ -1,4 +1,4 @@
-# Scraping the web with Puppeteer
+# Scraping egghead.io with Puppeteer
 
 Required:
 - `node` - at least v10.15.3
